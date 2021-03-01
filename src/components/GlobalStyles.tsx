@@ -33,6 +33,9 @@ const GlobalStyles = createGlobalStyle`
 
     border: none;
     outline: none;
+    cursor: pointer;
+
+    background-color: transparent;
 
     &:hover,
     &:active {

@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import oc from 'open-color';
 
 interface ButtonProps {
-  color:
+  color?:
     'primary' |
     'danger' |
     'success' |
@@ -40,10 +40,10 @@ const outlineColorStyles = css<ButtonProps>`
           outline &&
           css`
             background-color: transparent;
-            
+
             font-weight: 700;
             color: ${oc.black};
-            
+
             border: 2px solid ${oc.black};
           `
   };
@@ -56,7 +56,7 @@ const outlineColorStyles = css<ButtonProps>`
 
             font-weight: 700;
             color: ${oc.indigo[5]};
-            
+
             border: 2px solid ${oc.indigo[5]};
           `
   };
@@ -69,7 +69,7 @@ const outlineColorStyles = css<ButtonProps>`
 
             font-weight: 700;
             color: ${oc.red[7]}
-            
+
             border: 2px solid ${oc.red[7]}
           `
   };
