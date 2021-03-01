@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Avatar from 'react-avatar';
-import Index from '../../common/Button';
-import Button from '../../common/Button';
+import Button from '../../common/button/index';
 
 const SubMenuContainer = styled.div`
   order: 2;
