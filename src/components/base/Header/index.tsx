@@ -5,7 +5,7 @@ import { up } from 'styled-breakpoints';
 import useToggle from '../../../lib/hooks/useToggle';
 import MainMenu from './MainMenu';
 import SubMenu from './SubMenu';
-import Button from '../../common/Button';
+import Button from '../../common/button';
 import Logo from '../../../assets/img/Logo.svg';
 
 
@@ -14,11 +14,11 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  padding: 12px 16px;
-
   width: 100%;
 
-  border: 1px solid #000;
+  padding: 12px 16px;
+
+  box-shadow: 0 2px 4px 0 hsl(0deg 0% 81% / 50%);
 `;
 
 const MenuButton = styled(Button)`
