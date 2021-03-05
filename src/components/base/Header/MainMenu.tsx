@@ -2,7 +2,6 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { up } from 'styled-breakpoints';
-import {MdChevronRight} from 'react-icons/md';
 
 const MainMenuContainer = styled.ul<{ open: boolean }>`
   position: fixed;

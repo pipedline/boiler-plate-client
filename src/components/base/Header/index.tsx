@@ -3,13 +3,15 @@ import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 import { up } from 'styled-breakpoints';
 import useToggle from '../../../lib/hooks/useToggle';
-import MainMenu from './MainMenu';
-import SubMenu from './SubMenu';
 import Button from '../../common/button';
 import Logo from '../../../assets/img/Logo.svg';
+import MainMenu from './MainMenu';
+import SubMenu from './SubMenu';
 
 
 const HeaderContainer = styled.header`
+  position: sticky;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
