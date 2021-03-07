@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { up } from 'styled-breakpoints';
 
-const MainMenuContainer = styled.ul<{ open: boolean }>`
+const MainMenuBox = styled.ul<{ open: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
@@ -77,7 +77,7 @@ interface MainMenuProps {
 
 const MainMenu = ({ open }: MainMenuProps) => {
   return (
-    <MainMenuContainer open={open}>
+    <MainMenuBox open={open}>
       <MainMenuItem>
         <MainItemLink
           to={'/'}
@@ -132,7 +132,7 @@ const MainMenu = ({ open }: MainMenuProps) => {
           유니섹스
         </MainItemLink>
       </MainMenuItem>
-    </MainMenuContainer>
+    </MainMenuBox>
   );
 };
 
