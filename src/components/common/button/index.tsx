@@ -86,6 +86,12 @@ const sizeStyles = css<ButtonProps>`
 `;
 
 const Button = styled.button<ButtonProps>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 0.5rem 0.75rem;
+  
   color: ${oc.white};
 
   ${colorStyles};
